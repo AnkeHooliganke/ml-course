@@ -9,3 +9,4 @@
 backprop lecture from karpathy https://www.youtube.com/watch?v=i94OvYb6noo&t=2061s
 playground https://playground.tensorflow.org/
 softmax & crossentropy https://deepnotes.io/softmax-crossentropy
+batchnorm backprop https://kratzert.github.io/2016/02/12/understanding-the-gradient-flow-through-the-batch-normalization-layer.html
