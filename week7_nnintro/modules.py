@@ -525,7 +525,7 @@ class Dropout(Module):
     def updateOutput(self, input):
         # Your code goes here. ################################################
         if self.training:
-          self.mask = np.random.binomial(1, 1 - self.p, input.shape[0] * input.shape[1]).reshape(input.shape)
+          self.mask = np.random.binomial(1, 1 - self.p, np.prod(input.shape)).reshape(input.shape)
           self.output = input * self.mask  / (1 - self.p)
         else:
           self.output = input
